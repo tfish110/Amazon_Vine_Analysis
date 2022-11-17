@@ -9,8 +9,22 @@ The goal in this challenge was to analyze product reviews from Amazon, comparing
 
 ## Results
 
+![DataFrame of paid reviews](https://github.com/tfish110/Amazon_Vine_Analysis/blob/main/Resources/paid_reviews_df.jpg)
+![Summary stats of paid reviews](https://github.com/tfish110/Amazon_Vine_Analysis/blob/main/Resources/paid_reviews_summary.jpg)
 
+- Above is a screenshot of the first 20 rows of the DataFrame for reviews that meet the criteria described above in the overview, restricted to only those reviews from paid members of the Vine program, followed by a screenshot of a summary of the statistics of interest
+- In total, there were 94 reviews that met the analysis criteria from paid Vine reviewers
+- Of those 94 reviews, 48 of them received five stars
+- 51.06% of the reviews from paid Vine members received five stars 
 
-![caption](url)
+![DataFrame of unpaid reviews](https://github.com/tfish110/Amazon_Vine_Analysis/blob/main/Resources/unpaid_reviews_df.jpg)
+![Summary stats of unpaid reviews](https://github.com/tfish110/Amazon_Vine_Analysis/blob/main/Resources/unpaid_reviews_summary.jpg)
+
+- Above is a screenshot of the first 20 rows of the DataFrame for reviews that meet the criteria described above in the overview, restricted to only those reviews from unpaid customers who were not members of the Vine program, followed by a screenshot of a summary of the statistics of interest
+- In total, there were 40,471 reviews that met the analysis criteria from unpaid customers who were not Vine reviewers
+- Of those 40,471 reviews, 15,663 of them received five stars
+- 38.70% of the reviews from unpaid customers who were not Vine members received five stars 
 
 ## Summary
+
+The evidence here would suggest that there may be some positivity bias for reviews generated from Vine program members. However, it is clear that these two groups have wildly different sample sizes, which makes it difficult to assess positivity bias without further statistical analysis. It's recommended that the an analysis of variance be conducted to compare the two different user groups; that way, despite the difference in sample size, it could be identified whether or not there is any statistical significance to the apparent disparity between the percentage of reviews that received five stars from each group.
